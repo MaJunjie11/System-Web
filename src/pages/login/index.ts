@@ -78,8 +78,8 @@ export const schema = {
             type: 'text',
             name: 'uuid',
             required: true,
-            placeholder: '请输入学号',
-            label: '学号',
+            placeholder: '请输入学号/工号',
+            label: '学/工号',
             size: 'full',
           },
           {
@@ -129,6 +129,29 @@ export const schema = {
                 mode: 'inline',
                 className: 'inline',
                 inputClassName: 'p-t-none',
+              },
+              {
+                'type': 'select',
+                'name': 'type',
+                'label': '用户类型',
+                // "inline": true,
+                mode: 'inline',
+                className: 'inline',
+                inputClassName: 'p-t-none',
+                'options': [
+                  {
+                    'label': '学生',
+                    'value': 1
+                  },
+                  {
+                    'label': '老师',
+                    'value': 2
+                  },
+                  {
+                    'label': '管理员',
+                    'value': 3
+                  }
+                ]
               },
               /*
               {

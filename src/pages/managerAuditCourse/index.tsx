@@ -113,10 +113,11 @@ export const schema = {
                     },
                     'controls': [
                       {
-                        'label': '实验室地址',
-                        'type': 'text',
-                        'name': 'courseAddr'
-                      }
+                        'label': '选项',
+                        'type': 'select',
+                        'name': 'courseAddr',
+                        'source':'http://152.136.134.52:9090/manager_get_use_room'
+                      },
                     ]
                   }
                 ]

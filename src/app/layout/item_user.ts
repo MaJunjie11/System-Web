@@ -74,7 +74,7 @@ export const itemUserSchema = {
                   {
                     type:'static',
                     name:'uuid',
-                    label:'学号',
+                    label:'学/工号',
                     value:'文本',
                     quickEdit:false,
                   },

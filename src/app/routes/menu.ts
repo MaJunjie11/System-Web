@@ -31,6 +31,7 @@ export const menuRoutes: LimitMenuItem = {
         },
      */
   
+    
     {
       path:'/',
       exact: true,
@@ -40,6 +41,12 @@ export const menuRoutes: LimitMenuItem = {
       icon: 'fa fa-coffee',
       nodePath: 'selectRoom',
     },
+    {
+      label: '选课程',
+      icon: 'fa fa-coffee',
+      nodePath: 'noSelectRoom',
+    },
+
     {
       label: '我的课程',
       icon: 'fa fa-paint-brush',
@@ -85,7 +92,7 @@ export const menuRoutes: LimitMenuItem = {
       nodePath: 'auditRoom',
     },
     {
-      label: '被拒绝课程',
+      label: '未通过课程',
       icon: 'fa fa-coffee',
       nodePath: 'refuseCourse',
     },
@@ -119,6 +126,16 @@ export const menuRoutes: LimitMenuItem = {
       label: '重置密码',
       icon: 'fa fa-coffee',
       nodePath: 'resetPassword',
+    },
+    {
+      label: '添加教室',
+      icon: 'fa fa-coffee',
+      nodePath: 'managerAddRoom',
+    },
+    {
+      label: '选课管理',
+      icon: 'fa fa-coffee',
+      nodePath: 'managerControlSelectRoom',
     },
 
 
